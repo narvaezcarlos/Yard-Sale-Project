@@ -28,49 +28,63 @@
 				font-family: 'Quicksand', sans-serif;
 				margin: unset;
 			}
-			.desktop-menu {
-				width: 150px;
-				height: auto;
-				border: 1px solid var(--very-light-pink);
-				border-radius: 6px;
+			.mobile-menu {
+				padding: 24px;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
 			}
-			.desktop-menu-ul {
+			.mobile-menu > ul:nth-child(1) {
+				border-bottom: 1px solid var(--very-light-pink);
+			}
+			.mobile-menu > ul:nth-child(3) {
+				margin-bottom: 24px;
+			}
+			.mobile-menu ul {
 				list-style: none;
-				margin: unset;
 				padding: unset;
+				margin: 24px 0 0;
 			}
-			.desktop-menu ul li {
-				text-align: end;
-				padding: 16px;
+			.mobile-menu ul li {
+				margin-bottom: 24px;
 			}
-			.desktop-menu ul li a {
+			.mobile-menu ul li a {
 				text-decoration: unset;
 				color: var(--black);
-			}
-			.desktop-menu ul li:not(:last-child) {
 				font-weight: bold;
 			}
-			.desktop-menu ul li:last-child {
-				padding-top: 20px;
-				border-top: 1px solid var(--very-light-pink);
+			.mobile-menu .email {
+				font-size: var(--sm);
+				font-weight: 300;
 				color: var(--very-light-pink);
 			}
-			.desktop-menu ul li:last-child a {
-				color: var(--very-light-pink);
+			.mobile-menu .sign-out {
 				font-size: var(--sm);
+				color: var(--hospital-green);
 			}
 			@media (max-width: 640px) {
 			}
 		</style>
 	</head>
 	<body>
-		<div class="desktop-menu">
-			<ul class="desktop-menu-ul">
+		<div class="mobile-menu">
+			<ul class="mobile-menu-ul">
+				<li><a href="/">CATEGORIES</a></li>
+				<li><a href="/">All</a></li>
+				<li><a href="/">Clothes</a></li>
+				<li><a href="/">Electronics</a></li>
+				<li><a href="/">Furnitures</a></li>
+				<li><a href="/">Toys</a></li>
+				<li><a href="/">Orders</a></li>
+			</ul>
+			<ul class="mobile-menu-ul">
 				<li><a href="/">My Account</a></li>
 				<li><a href="/">My Orders</a></li>
-				<li><a href="/">My Address</a></li>
-				<li><a href="/">My Payments</a></li>
-				<li><a href="/">Sign Out</a></li>
+			</ul>
+			<ul class="mobile-menu-ul">
+				<li><a class="email" href="/">example@example.com</a></li>
+				<li><a class="sign-out" href="/">Sign out</a></li>
 			</ul>
 		</div>
 	</body>

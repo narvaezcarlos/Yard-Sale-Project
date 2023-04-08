@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Yard Sale Project | Product Details</title>
+		<style>
+			:root {
+				--white: #fff;
+				--black: #000;
+				--dark: #232830;
+				--very-light-pink: #c7c7c7;
+				--text-input-field: #f7f7f7;
+				--hospital-green: #acd9b2;
+				--sm: 14px;
+				--md: 16px;
+				--lg: 18px;
+			}
+			body {
+				font-family: 'Quicksand', sans-serif;
+				margin: unset;
+			}
+			.btn-primary {
+				background-color: var(--hospital-green);
+				border-radius: 8px;
+				border: unset;
+				color: var(--white);
+				height: 50px;
+				padding: 6px;
+				width: 100%;
+				cursor: pointer;
+				font-size: var(--md);
+				font-weight: bold;
+			}
+			.add-to-cart-button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 90%;
+				margin: auto;
+			}
+			.product-detail {
+				width: 360px;
+				padding-bottom: 24px;
+				position: absolute;
+				right: 0;
+			}
+			.product-detail-close {
+				position: absolute;
+				top: 6px;
+				left: 6px;
+				background-color: #fff;
+				border-radius: 50%;
+				padding: 2px;
+			}
+			.product-detail-close:hover {
+				cursor: pointer;
+			}
+			.product-detail-image {
+				width: 100%;
+				height: 360px;
+				object-fit: cover;
+				border-radius: 0 0 16px 16px;
+			}
+			.product-info {
+				margin: 24px;
+			}
+			.product-price {
+				font-weight: bold;
+				font-size: var(--md);
+				margin-top: 0;
+				margin-bottom: 36px;
+			}
+			.product-name {
+				color: var(--very-light-pink);
+				font-size: var(--sm);
+				margin-top: 0;
+				margin-bottom: 36px;
+			}
+			.product-description {
+				color: var(--very-light-pink);
+				font-size: var(--md);
+				margin-top: 0;
+				margin-bottom: 36px;
+			}
+			@media (max-width: 640px) {
+				.product-detail {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<aside class="product-detail">
+			<img
+				class="product-detail-close"
+				src="/icons/icon_close.png"
+				alt="close"
+			/>
+			<img
+				class="product-detail-image"
+				src="https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg"
+				alt="product"
+			/>
+			<div class="product-info">
+				<p class="product-price">$35,00</p>
+				<p class="product-name">Bike</p>
+				<p class="product-description">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+					consectetur eum dolor praesentium sapiente unde quae fugit et tenetur?
+					Ipsa, inventore non culpa hic esse officia velit quas ad impedit.
+				</p>
+			</div>
+			<button class="btn-primary add-to-cart-button">
+				<img src="/icons/bt_add_to_cart.svg" alt="add-to-cart" />Add to cart
+			</button>
+		</aside>
+	</body>
+</html>
